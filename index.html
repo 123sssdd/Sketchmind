@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>学习看板</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://unpkg.com/roughjs/bundled/rough.js"></script>
+  <script src="./vendor/rough.js"></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#board">跳到条目列表</a>
+
+  <header class="site-header">
+    <div class="header-row">
+      <div class="brand">
+        <svg class="brand-icon" viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="8" y="10" width="32" height="28" rx="2" fill="#EAF6FF" stroke="#142A49" stroke-width="1.8"/>
+          <path d="M24 10v28" stroke="#142A49" stroke-width="1.8"/>
+          <path d="M13 18h7M13 24h7M13 30h6M28 18h7M28 24h7M28 30h6" stroke="#142A49" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h1><span class="marker">学习看板</span></h1>
+          <p class="subtitle">本地手绘知识库 · 数据来自 <code>manifest.json</code></p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="view-toggle" role="tablist" aria-label="视图切换">
+          <button type="button" class="btn is-active" id="btn-view-cards" data-view="cards" data-rough data-seed="1" aria-pressed="true">卡片</button>
+          <button type="button" class="btn" id="btn-view-timeline" data-view="timeline" data-rough data-seed="2" aria-pressed="false">轮次时间线</button>
+        </div>
+        <button type="button" class="btn btn-export" id="btn-export" data-rough data-seed="3">导出更新后的 manifest.json</button>
+      </div>
+    </div>
+
+    <p class="updated" id="updated-at"></p>
+
+    <section class="stats" id="stats" aria-label="统计"></section>
+  </header>
+
+  <section class="toolbar" aria-label="筛选与排序">
+    <div class="toolbar-inner" data-rough data-seed="11">
+      <div class="filters">
+        <label class="field">
+          <span>类型</span>
+          <div class="select-wrap" data-rough data-seed="21">
+            <select id="filter-type"></select>
+          </div>
+        </label>
+        <label class="field">
+          <span>分类</span>
+          <div class="select-wrap" data-rough data-seed="22">
+            <select id="filter-category"></select>
+          </div>
+        </label>
+        <label class="field">
+          <span>轮次</span>
+          <div class="select-wrap" data-rough data-seed="23">
+            <select id="filter-round"></select>
+          </div>
+        </label>
+        <label class="field">
+          <span>已读</span>
+          <div class="select-wrap" data-rough data-seed="24">
+            <select id="filter-read">
+              <option value="all">全部</option>
+              <option value="yes">已读</option>
+              <option value="no">未读</option>
+            </select>
+          </div>
+        </label>
+        <label class="field">
+          <span>已应用</span>
+          <div class="select-wrap" data-rough data-seed="25">
+            <select id="filter-applied">
+              <option value="all">全部</option>
+              <option value="yes">已应用</option>
+              <option value="no">未应用</option>
+            </select>
+          </div>
+        </label>
+        <label class="field">
+          <span>排序</span>
+          <div class="select-wrap" data-rough data-seed="26">
+            <select id="sort-by">
+              <option value="score">综合分</option>
+              <option value="date">日期</option>
+              <option value="quality">质量</option>
+              <option value="relevance">相关度</option>
+            </select>
+          </div>
+        </label>
+        <label class="field field-search">
+          <span>搜索</span>
+          <div class="search-wrap" data-rough data-seed="27">
+            <input type="search" id="search" placeholder="标题、简介、来源、标签…" autocomplete="off">
+          </div>
+        </label>
+      </div>
+      <div class="toolbar-foot">
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <button type="button" class="btn btn-reset" id="btn-reset" data-rough data-seed="28">重置筛选</button>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <p class="status" id="status" hidden></p>
+    <section id="board" class="view" aria-label="条目卡片"></section>
+    <section id="timeline" class="view is-hidden" aria-label="轮次时间线"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>勾选与效果批注保存在本机浏览器 · 导出可得到更新后的 <code>manifest.json</code></p>
+  </footer>
+</body>
+</html>
