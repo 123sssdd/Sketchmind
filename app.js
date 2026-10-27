@@ -2,7 +2,7 @@
   "use strict";
 
   const STORAGE_KEY = "learning-hub:v1";
-  const HUB_URL = "./data/hub.json";
+  const MANIFEST_URL = "./manifest.json";
 
   const TYPE_LABELS = {
     skill: "技能",
@@ -61,7 +61,7 @@
   };
 
   const state = {
-    hub: null,
+    manifest: null,
     local: loadLocal(),
     view: "cards",
     filters: {
@@ -207,7 +207,7 @@
   }
 
   function renderStats() {
-    const items = state.hub.items || [];
+    const items = state.manifest.items || [];
     const stats = computeStats(items);
     const blocks = [
       { label: "总数", value: stats.total, tone: "blue", mark: false },
@@ -252,7 +252,7 @@
   function filteredItems() {
     const { type, category, round, read, applied, query, sort } = state.filters;
     const q = query.trim().toLowerCase();
-    let list = (state.hub.items || []).map(mergedItem);
+    let list = (state.manifest.items || []).map(mergedItem);
 
     if (type !== "all") list = list.filter((item) => item.type === type);
     if (category !== "all") list = list.filter((item) => item.category === category);
@@ -366,7 +366,7 @@
 
   function renderBoard() {
     const items = filteredItems();
-    const total = (state.hub.items || []).length;
+    const total = (state.manifest.items || []).length;
     el.resultCount.textContent = `显示 ${items.length} / ${total} 条`;
 
     if (state.view === "cards") {
@@ -381,8 +381,8 @@
   }
 
   function renderTimeline(visibleItems) {
-    const rounds = state.hub.rounds || [];
-    const byId = new Map((state.hub.items || []).map((item) => [item.id, mergedItem(item)]));
+    const rounds = state.manifest.rounds || [];
+    const byId = new Map((state.manifest.items || []).map((item) => [item.id, mergedItem(item)]));
     const visibleIds = new Set(visibleItems.map((item) => item.id));
 
     if (!rounds.length) {
@@ -566,7 +566,7 @@
   }
 
   function populateFilters() {
-    const items = state.hub.items || [];
+    const items = state.manifest.items || [];
     const types = uniqueSorted(
       items.map((item) => item.type),
       TYPE_ORDER
@@ -606,7 +606,7 @@
   }
 
   function buildUpdatedManifest() {
-    const cloned = JSON.parse(JSON.stringify(state.hub));
+    const cloned = JSON.parse(JSON.stringify(state.manifest));
     cloned.updatedAt = new Date().toISOString();
     cloned.items = (cloned.items || []).map((item) => {
       const merged = mergedItem(item);
@@ -628,7 +628,7 @@
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = "sketchmind-snapshot.json";
+    link.download = "manifest.json";
     document.body.appendChild(link);
     link.click();
     link.remove();
@@ -719,18 +719,18 @@
   async function init() {
     bindEvents();
     observeResize();
-    showStatus("正在读取清单…", false);
+    showStatus("正在读取 manifest.json…", false);
 
     try {
-      const response = await fetch(HUB_URL, { cache: "no-store" });
+      const response = await fetch(MANIFEST_URL, { cache: "no-store" });
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);
       }
       const data = await response.json();
       if (!data || !Array.isArray(data.items)) {
-        throw new Error("清单缺少 items 数组");
+        throw new Error("manifest.json 缺少 items 数组");
       }
-      state.hub = data;
+      state.manifest = data;
       showStatus("");
       el.updatedAt.textContent = data.updatedAt
         ? `最近更新 ${formatDate(data.updatedAt)}`
@@ -739,7 +739,7 @@
       renderAll();
     } catch (error) {
       showStatus(
-        `无法读取清单（${error.message}）。请用本地 HTTP 服务打开，而不是直接双击文件。`,
+        `无法读取 manifest.json（${error.message}）。请用本地 HTTP 服务打开，而不是直接双击文件。`,
         true
       );
     }

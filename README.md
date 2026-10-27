@@ -1,29 +1,30 @@
 # Sketchmind
 
-手绘风学习看板，用来沉淀 AI 全栈 / AI Agent 方向的资料：搜索、评分、挑选、已读与应用效果。
+手绘风学习看板：沉淀 AI 全栈 / AI Agent 方向的资料、评分与进度。
 
-**在线：** [https://sketchmind.grok.me](https://sketchmind.grok.me)
+**在线：** https://123sssdd.github.io/Sketchmind/
 
-## 怎么工作
+唯一数据文件是根目录的 `manifest.json`。更新清单 → `git push` → GitHub Pages 自动发布。
 
-线上以数据库为准，接口是 `/api/hub`。其他 AI 用 POST 写入，访客刷新即可见。首次上线时若库为空，会从 `data/hub.json` 灌入一次。
-
-发布与接口约定见 [`docs/publish.md`](docs/publish.md)。协作工作流见 [`docs/learning-workflow.png`](docs/learning-workflow.png)。
-
-## 本地预览 UI
+## 本地预览
 
 ```bash
 python3 -m http.server 8080
 ```
 
-打开 http://localhost:8080 。请用 HTTP 服务打开，不要用 `file://`。
+打开 http://localhost:8080 （不要用 `file://`）。
+
+## 更新数据
+
+1. 编辑 `manifest.json`（或导入合并后覆盖）
+2. `git add manifest.json && git commit && git push`
+3. 稍等 Pages 构建完成，刷新网站即可
 
 ## 目录
 
 | 路径 | 说明 |
 | --- | --- |
-| `index.html` / `style.css` / `app.js` | 手绘风界面 |
-| `data/hub.json` | 首次上线用的初始清单 |
-| `docs/publish.md` | 发布与 API |
+| `index.html` / `style.css` / `app.js` | 界面 |
+| `manifest.json` | 清单数据 |
 | `docs/` | 工作流架构图 |
 | `fonts/` / `vendor/` | 字体与 Rough.js |
