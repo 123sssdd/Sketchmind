@@ -1,27 +1,29 @@
 # Sketchmind
 
-手绘风学习看板：记录 AI 全栈 / AI Agent 工程师方向的搜索、评分、挑选与应用进度。
+手绘风学习看板，用来沉淀 AI 全栈 / AI Agent 方向的资料：搜索、评分、挑选、已读与应用效果。
 
-**在线预览：** [https://sketchmind.grok.me](https://sketchmind.grok.me)（重建发布后生效）
+**在线：** [https://sketchmind.grok.me](https://sketchmind.grok.me)
 
-## 数据模型
+## 怎么工作
 
-**数据库是唯一真相。** 页面只请求 `GET /api/hub`。仓库里的 `seed.json`（见 `rebuild/`）只在库为空时冷启动一次，不是运行时数据源。
+线上以数据库为准，接口是 `/api/hub`。其他 AI 用 POST 写入，访客刷新即可见。首次上线时若库为空，会从 `data/hub.json` 灌入一次。
 
-写入：`POST /api/hub`（按 id 合并）、`DELETE /api/hub/:id`。导出快照仅用于备份。
+发布与接口约定见 [`docs/publish.md`](docs/publish.md)。协作工作流见 [`docs/learning-workflow.png`](docs/learning-workflow.png)。
 
-重建说明与给 Grok Build 的提示词：[`rebuild/grok-build-prompt.md`](rebuild/grok-build-prompt.md)。种子：[`rebuild/seed.json`](rebuild/seed.json)。
-
-本仓库根目录仍保留静态原型（`index.html` + `manifest.json`），便于本地预览 UI；正式站以带 API 的发布版为准。
-
-## 本地静态预览
+## 本地预览 UI
 
 ```bash
-cd /workspace/learning-hub && python3 -m http.server 8080
+python3 -m http.server 8080
 ```
 
-浏览器打开 [http://localhost:8080](http://localhost:8080)。`file://` 会拦截 `fetch`。
+打开 http://localhost:8080 。请用 HTTP 服务打开，不要用 `file://`。
 
-## 工作流
+## 目录
 
-多 Bot 协作：BrainStorm（主）→ Searcher → 质量评估 → 通知用户挑选 → 深挖新一轮；优化规划师复盘；手绘风技术配图负责画图；Memory 归档。架构图：[`docs/learning-workflow.png`](docs/learning-workflow.png)。
+| 路径 | 说明 |
+| --- | --- |
+| `index.html` / `style.css` / `app.js` | 手绘风界面 |
+| `data/hub.json` | 首次上线用的初始清单 |
+| `docs/publish.md` | 发布与 API |
+| `docs/` | 工作流架构图 |
+| `fonts/` / `vendor/` | 字体与 Rough.js |
