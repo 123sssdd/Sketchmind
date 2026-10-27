@@ -1,8 +1,14 @@
-# 学习看板
+# Sketchmind
 
-本地手绘风格的学习条目看板。纯静态页面，无后端，唯一数据源是 `manifest.json`。
+手绘风学习看板：记录 AI 全栈 / AI Agent 工程师方向的搜索、评分、挑选与应用进度。
+
+**在线预览：** [https://sketchmind.grok.me](https://sketchmind.grok.me)
+
+纯静态页面，无后端。唯一数据源是 `manifest.json`。
 
 ## 运行
+
+本地调试：
 
 ```bash
 cd /workspace/learning-hub && python3 -m http.server 8080
@@ -21,6 +27,10 @@ cd /workspace/learning-hub && python3 -m http.server 8080
 - 勾选和效果批注保存在浏览器 `localStorage`
 - 「导出更新后的 manifest.json」会下载合并了本地勾选状态的 JSON，不会改写仓库里的 `manifest.json`
 
+## 工作流
+
+多 Bot 协作：BrainStorm（主）→ Searcher → 质量评估 → 通知用户挑选 → 深挖新一轮；优化规划师做复盘；手绘风技术配图负责画图；Memory 归档。架构图见 [`docs/learning-workflow.png`](docs/learning-workflow.png)。
+
 ## 文件
 
 | 文件 | 说明 |
@@ -29,3 +39,4 @@ cd /workspace/learning-hub && python3 -m http.server 8080
 | `style.css` | 纸面手绘视觉 |
 | `app.js` | 读取数据、筛选排序、绘制 Rough.js 描边 |
 | `manifest.json` | 条目与轮次数据（应用不会修改此文件） |
+| `docs/` | 工作流架构图（PNG / SVG） |
