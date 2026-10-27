@@ -2,41 +2,26 @@
 
 手绘风学习看板：记录 AI 全栈 / AI Agent 工程师方向的搜索、评分、挑选与应用进度。
 
-**在线预览：** [https://sketchmind.grok.me](https://sketchmind.grok.me)
+**在线预览：** [https://sketchmind.grok.me](https://sketchmind.grok.me)（重建发布后生效）
 
-纯静态页面，无后端。唯一数据源是 `manifest.json`。
+## 数据模型
 
-## 运行
+**数据库是唯一真相。** 页面只请求 `GET /api/hub`。仓库里的 `seed.json`（见 `rebuild/`）只在库为空时冷启动一次，不是运行时数据源。
 
-本地调试：
+写入：`POST /api/hub`（按 id 合并）、`DELETE /api/hub/:id`。导出快照仅用于备份。
+
+重建说明与给 Grok Build 的提示词：[`rebuild/grok-build-prompt.md`](rebuild/grok-build-prompt.md)。种子：[`rebuild/seed.json`](rebuild/seed.json)。
+
+本仓库根目录仍保留静态原型（`index.html` + `manifest.json`），便于本地预览 UI；正式站以带 API 的发布版为准。
+
+## 本地静态预览
 
 ```bash
 cd /workspace/learning-hub && python3 -m http.server 8080
 ```
 
-浏览器打开 [http://localhost:8080](http://localhost:8080)。
-
-请用本地 HTTP 服务打开。直接用 `file://` 打开时，浏览器会拦截 `fetch('./manifest.json')`。
-
-## 功能
-
-- 顶部统计：总数、已读、已应用、平均分（`score` 为空时记为「未评分」，不计入平均分）
-- 按类型、分类、轮次、已读、已应用筛选，按日期 / 综合分 / 质量 / 相关度排序，并支持搜索
-- 卡片展示标题链接、类型、来源、日期、简介、质量与相关度条形、已读 / 已应用勾选、效果批注
-- 轮次时间线：每轮主题与挑选的条目
-- 勾选和效果批注保存在浏览器 `localStorage`
-- 「导出更新后的 manifest.json」会下载合并了本地勾选状态的 JSON，不会改写仓库里的 `manifest.json`
+浏览器打开 [http://localhost:8080](http://localhost:8080)。`file://` 会拦截 `fetch`。
 
 ## 工作流
 
-多 Bot 协作：BrainStorm（主）→ Searcher → 质量评估 → 通知用户挑选 → 深挖新一轮；优化规划师做复盘；手绘风技术配图负责画图；Memory 归档。架构图见 [`docs/learning-workflow.png`](docs/learning-workflow.png)。
-
-## 文件
-
-| 文件 | 说明 |
-| --- | --- |
-| `index.html` | 页面结构 |
-| `style.css` | 纸面手绘视觉 |
-| `app.js` | 读取数据、筛选排序、绘制 Rough.js 描边 |
-| `manifest.json` | 条目与轮次数据（应用不会修改此文件） |
-| `docs/` | 工作流架构图（PNG / SVG） |
+多 Bot 协作：BrainStorm（主）→ Searcher → 质量评估 → 通知用户挑选 → 深挖新一轮；优化规划师复盘；手绘风技术配图负责画图；Memory 归档。架构图：[`docs/learning-workflow.png`](docs/learning-workflow.png)。
