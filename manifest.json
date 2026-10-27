@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T18:45:00+08:00",
+  "updatedAt": "2026-10-27T21:03:21+08:00",
   "rounds": [
     {
       "id": 1,
@@ -238,8 +238,8 @@
       "round": 1,
       "reason": "适合述职类演示",
       "read": false,
-      "applied": false,
-      "effect": "",
+      "applied": true,
+      "effect": "已安装到 workflows",
       "notes": "第 2 轮结论：备选。有生成脚本、溢出检查和评分卡，适合快速出中文初稿；文档冗长",
       "tags": []
     },
@@ -278,8 +278,8 @@
       "round": 1,
       "reason": "唯一直接覆盖述职报告，样本小需试用",
       "read": false,
-      "applied": false,
-      "effect": "",
+      "applied": true,
+      "effect": "已安装到 workflows",
       "notes": "第 2 轮结论：值得装。6 个里最完整，有脚本、MIT；体制内口径需改为互联网措辞",
       "tags": []
     },
@@ -358,8 +358,8 @@
       "round": 2,
       "reason": "替代 Agent Team Orchestration",
       "read": false,
-      "applied": false,
-      "effect": "",
+      "applied": true,
+      "effect": "已安装到 workflows",
       "notes": "",
       "tags": []
     },
@@ -398,8 +398,8 @@
       "round": 2,
       "reason": "PPT 首选",
       "read": false,
-      "applied": false,
-      "effect": "",
+      "applied": true,
+      "effect": "已安装到 workflows",
       "notes": "",
       "tags": []
     },
@@ -418,8 +418,8 @@
       "round": 2,
       "reason": "替代 diagram-builder",
       "read": false,
-      "applied": false,
-      "effect": "",
+      "applied": true,
+      "effect": "已安装到 workflows",
       "notes": "",
       "tags": []
     },
@@ -458,8 +458,8 @@
       "round": 2,
       "reason": "写技术方案",
       "read": false,
-      "applied": false,
-      "effect": "",
+      "applied": true,
+      "effect": "已安装到 workflows",
       "notes": "",
       "tags": []
     },
@@ -478,8 +478,8 @@
       "round": 2,
       "reason": "平时积累述职素材",
       "read": false,
-      "applied": false,
-      "effect": "",
+      "applied": true,
+      "effect": "已安装到 workflows",
       "notes": "",
       "tags": []
     },
