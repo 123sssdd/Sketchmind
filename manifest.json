@@ -1333,7 +1333,7 @@
     {
       "id": "20261028-1606-02-37",
       "title": "Firecrawl skills",
-      "url": "https://github.com/firecrawl/cli/blob/main/skills/firecrawl-search/SKILL.md（另 firecrawl-scrape、firecrawl-crawl 的 SKILL.md）",
+      "url": "https://github.com/firecrawl/cli/blob/main/skills/firecrawl-search/SKILL.md",
       "type": "skill",
       "source": "search-stack-expansion-2026-10-28.md",
       "category": "搜索/抓取 skill",
@@ -1619,7 +1619,7 @@
     {
       "id": "20261028-1606-02-50",
       "title": "anthropics/skills（webapp-testing、pdf、mcp-builder）",
-      "url": "https://github.com/anthropics/skills/blob/main/skills/webapp-testing/SKILL.md（另 pdf、mcp-builder 的 SKILL.md）",
+      "url": "https://github.com/anthropics/skills/blob/main/skills/webapp-testing/SKILL.md",
       "type": "skill",
       "source": "search-stack-expansion-2026-10-28.md",
       "category": "相关 skill",
