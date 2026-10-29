@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-29T12:25:00+08:00",
+  "updatedAt": "2026-10-29T12:30:00+08:00",
   "rounds": [
     {
       "id": 1,
@@ -1707,8 +1707,8 @@
       "type": "github/教程",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：85.1k★，2026-10-13 推送；近10 issue 0 关闭/1 评论（多为学员依赖问题，回应偏慢）",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：85.1k★，2026-10-13 推送；近10 issue 0 关闭/1 评论（多为学员依赖问题，回应偏慢）",
       "quality": null,
       "relevance": null,
       "score": 4.51,
@@ -1719,7 +1719,7 @@
       "effect": "",
       "notes": "中文，含面试题章节; 链接核实：?「未能确认」",
       "tags": [],
-      "content_hash": "8575d94c69e7a6ed89afb9c84912aca411f17b7c76e302c3398d41e4d5600b9f"
+      "content_hash": "a0e6e9a2dd91d6b6a4ea80d3da135647e7b20cfa077153c1ea5b11316ff3c542"
     },
     {
       "id": "20261029-0200-01-02",
@@ -1728,8 +1728,8 @@
       "type": "课程",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：repo huggingface/agents-course 34.1k★，2026-10-14 推送",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：repo huggingface/agents-course 34.1k★，2026-10-14 推送",
       "quality": null,
       "relevance": null,
       "score": 4.59,
@@ -1740,7 +1740,7 @@
       "effect": "",
       "notes": "免费+证书; 链接核实：200",
       "tags": [],
-      "content_hash": "d7ad340d9edefe0926c216dc3d220332dcf28ac7ecd322909875e214faf26a75"
+      "content_hash": "707e4abcebc294fe21de902e7167ea6aeb1fab476e574f730895db6605a78c5c"
     },
     {
       "id": "20261029-0200-01-03",
@@ -1749,8 +1749,8 @@
       "type": "官方博客/工程实践",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：—",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：—",
       "quality": null,
       "relevance": null,
       "score": null,
@@ -1761,7 +1761,7 @@
       "effect": "",
       "notes": "发布于2024-12，2025–26 仍被广泛引用；时效维度需质量评估判; 链接核实：200",
       "tags": [],
-      "content_hash": "010ec3686ccc8dd9b224b84ee8ee6d34ba056686ac3681c17d45c4899cb336f2"
+      "content_hash": "5c142f55c2bbfa43b9d70cc6f590ee93365bf79aa81e931e48d0a9649cd01ebf"
     },
     {
       "id": "20261029-0200-01-04",
@@ -1770,8 +1770,8 @@
       "type": "官方文档/github",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：modelcontextprotocol/servers 91.6k★，2026-10-27 推送；近10 issue 7 关闭/23 评论",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：modelcontextprotocol/servers 91.6k★，2026-10-27 推送；近10 issue 7 关闭/23 评论",
       "quality": null,
       "relevance": null,
       "score": 4.59,
@@ -1782,7 +1782,7 @@
       "effect": "",
       "notes": "链接核实：200",
       "tags": [],
-      "content_hash": "244b07ed07c0bc966a7517da4352815356bd4fb8d6ab9a9a88716116b52e1faa"
+      "content_hash": "d002f7236265bec119e45579daedd32682db647cb8349ce385528c59bbd08c00"
     },
     {
       "id": "20261029-0200-01-05",
@@ -1791,8 +1791,8 @@
       "type": "官方文档/框架",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：openai/openai-agents-python 30.4k★，2026-10-27；近10 issue 7 关闭/13 评论",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：openai/openai-agents-python 30.4k★，2026-10-27；近10 issue 7 关闭/13 评论",
       "quality": null,
       "relevance": null,
       "score": 4.59,
@@ -1803,7 +1803,7 @@
       "effect": "",
       "notes": "链接核实：200",
       "tags": [],
-      "content_hash": "fcf6cc65b6eacb7e447ff347a377170fe5402f85c13639c756d8993fb6fe2508"
+      "content_hash": "bbcd3ede68ccfeba61823adb1b173305855e82109e21a941068fb74bbcd2678a"
     },
     {
       "id": "20261029-0200-01-06",
@@ -1812,8 +1812,8 @@
       "type": "框架/课程",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：langchain-ai/langgraph 44.1k★，2026-10-28；近10 issue 1 关闭/2 评论",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：langchain-ai/langgraph 44.1k★，2026-10-28；近10 issue 1 关闭/2 评论",
       "quality": null,
       "relevance": null,
       "score": 4.51,
@@ -1824,7 +1824,7 @@
       "effect": "",
       "notes": "链接核实：200",
       "tags": [],
-      "content_hash": "bf8d50ab8d5765a627a76dae082bc4638cd7d747a2b1e92b6e11ebe989e7e5fd"
+      "content_hash": "4f4e2612342c80f1ca0aa493a7921a01244f3f7a8d817613e8dcaf0a6534e1c2"
     },
     {
       "id": "20261029-0200-01-07",
@@ -1833,8 +1833,8 @@
       "type": "github/框架",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：36.5k★，2026-10-27；近10 issue 3 关闭/8 评论",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：36.5k★，2026-10-27；近10 issue 3 关闭/8 评论",
       "quality": null,
       "relevance": null,
       "score": 4.41,
@@ -1845,7 +1845,7 @@
       "effect": "",
       "notes": "链接核实：200",
       "tags": [],
-      "content_hash": "74e3fbd3708809cfaa31054fcd2f5d9b5b01fb4adf7f75e8c3daba053016f16e"
+      "content_hash": "bc3f94194180772d7de3b3f17c99d59212d3df35b61d25eae6e8dcc51f310d35"
     },
     {
       "id": "20261029-0200-01-08",
@@ -1854,8 +1854,8 @@
       "type": "教程/中文",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：datawhalechina/all-in-rag 12.6k★，2026-09-30；近10 issue 2 关闭/3 评论",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：datawhalechina/all-in-rag 12.6k★，2026-09-30；近10 issue 2 关闭/3 评论",
       "quality": null,
       "relevance": null,
       "score": 4.25,
@@ -1866,7 +1866,7 @@
       "effect": "",
       "notes": "中文; 链接核实：200",
       "tags": [],
-      "content_hash": "d134be6fa56a095cb6cffab808c8066066c328b5ebbc8be8866a99681b98fe14"
+      "content_hash": "a500dfb6f270a0bcf92cfe4474c5f7d22e38f7e81e9ec1918d9b33241c5af93c"
     },
     {
       "id": "20261029-0200-01-09",
@@ -1875,8 +1875,8 @@
       "type": "github/评测",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：19.2k★，2026-10-27；近10 issue 0 关闭/12 评论",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：19.2k★，2026-10-27；近10 issue 0 关闭/12 评论",
       "quality": null,
       "relevance": null,
       "score": null,
@@ -1887,7 +1887,7 @@
       "effect": "",
       "notes": "厂商博客对比需注意立场; 链接核实：200",
       "tags": [],
-      "content_hash": "d9b39448a90b3cae9c8bcbf1fde1cf80fe9aed51022373ccaedcb53580b7a351"
+      "content_hash": "4b2550daba9ec6588d5e949065a85547afaab2e35668ca93698a9e1698e4255f"
     },
     {
       "id": "20261029-0200-01-10",
@@ -1896,8 +1896,8 @@
       "type": "工具/github",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：langfuse/langfuse 36.7k★，2026-10-28；近10 issue 3 关闭/21 评论",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：langfuse/langfuse 36.7k★，2026-10-28；近10 issue 3 关闭/21 评论",
       "quality": null,
       "relevance": null,
       "score": 4.18,
@@ -1908,7 +1908,7 @@
       "effect": "",
       "notes": "链接核实：200",
       "tags": [],
-      "content_hash": "b5393dae0f65fb111cd51b04ea239951f0520197f6648ac066b0bd736c9a0d14"
+      "content_hash": "5d913b9da4d1d97a026701e7ca111485448c47ffe035b42354f927e676016d9b"
     },
     {
       "id": "20261029-0200-01-11",
@@ -1917,8 +1917,8 @@
       "type": "github/浏览器 agent",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：119.4k★，2026-10-27；近10 issue 2 关闭/15 评论",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：119.4k★，2026-10-27；近10 issue 2 关闭/15 评论",
       "quality": null,
       "relevance": null,
       "score": 4.08,
@@ -1929,7 +1929,7 @@
       "effect": "",
       "notes": "链接核实：200",
       "tags": [],
-      "content_hash": "5b53bf7ca61ff59308c1673126f1d56d1a2fcd976b22a8856e33569b689d4f4a"
+      "content_hash": "e4e98dc496cc98c8301312ed056d4839c85fbd53e26352a45ea0de376428fa87"
     },
     {
       "id": "20261029-0200-01-12",
@@ -1938,8 +1938,8 @@
       "type": "github/coding agent",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：92.1k★，2026-10-28；近10 issue 1 关闭/8 评论",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：92.1k★，2026-10-28；近10 issue 1 关闭/8 评论",
       "quality": null,
       "relevance": null,
       "score": 4.08,
@@ -1950,7 +1950,7 @@
       "effect": "",
       "notes": "链接核实：200",
       "tags": [],
-      "content_hash": "e289e826717b6b69ced727ed1bc3fe61bb726f98dd7fb1ccb5acf4a4828c8ae9"
+      "content_hash": "75f685b854db35a1e459635bee1480369ec65c20a04fb41e404eee86f473bea7"
     },
     {
       "id": "20261029-0200-01-13",
@@ -1959,8 +1959,8 @@
       "type": "github/安全护栏",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：7.4k★，2026-10-28；近10 issue 2 关闭/22 评论",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：7.4k★，2026-10-28；近10 issue 2 关闭/22 评论",
       "quality": null,
       "relevance": null,
       "score": null,
@@ -1971,7 +1971,7 @@
       "effect": "",
       "notes": "链接核实：200",
       "tags": [],
-      "content_hash": "ba56a4cb80f647b583f0ef13a47fc453400687cf592099e9685ef37514458aae"
+      "content_hash": "a473ce9be44019d2d9babf906a71de483b9dea8ff750ac462908720a32ae29f7"
     },
     {
       "id": "20261029-0200-01-14",
@@ -1980,8 +1980,8 @@
       "type": "论文",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：—",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：—",
       "quality": null,
       "relevance": null,
       "score": null,
@@ -1992,7 +1992,7 @@
       "effect": "",
       "notes": "链接核实：200",
       "tags": [],
-      "content_hash": "5efe3f42d0171dba410347c9d2a7325d86eb693486d69070b4f5b9a0ad5fa72c"
+      "content_hash": "a809c0ff5ccc8c3c7e88e753966e08d248b1e6e0a65d06e407cb96eab182f26a"
     },
     {
       "id": "20261029-0200-01-15",
@@ -2001,8 +2001,8 @@
       "type": "路线图",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：—",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：—",
       "quality": null,
       "relevance": null,
       "score": null,
@@ -2013,7 +2013,7 @@
       "effect": "",
       "notes": "链接核实：200",
       "tags": [],
-      "content_hash": "65611d9cc65f4d45e38f0183cdd55897fad56431dd16da85e301738009421aca"
+      "content_hash": "a25d372324cd071d84f03be3e1c82f4059cfdb96599323c7b907d34d54c73106"
     },
     {
       "id": "20261029-0200-01-16",
@@ -2022,8 +2022,8 @@
       "type": "github/面试",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：15.3k★，2026-06-14 推送（>90 天，维护维度可能 <3）；近10 issue 3 关闭",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：15.3k★，2026-06-14 推送（>90 天，维护维度可能 <3）；近10 issue 3 关闭",
       "quality": null,
       "relevance": null,
       "score": null,
@@ -2034,7 +2034,7 @@
       "effect": "",
       "notes": "中文; 链接核实：200",
       "tags": [],
-      "content_hash": "ca9345391d090320c81622228d738144a2570df8aed254d9564c4810497d8160"
+      "content_hash": "c06d0f39c6cfc03eb9faec4bc34a0d2d1482d4350d2d264714b75170e85380ab"
     },
     {
       "id": "20261029-0200-01-17",
@@ -2043,8 +2043,8 @@
       "type": "全栈模板",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：fastapi/full-stack-fastapi-template 46.1k★，2026-10-26；近10 issue 9 关闭（多为依赖升级）",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：fastapi/full-stack-fastapi-template 46.1k★，2026-10-26；近10 issue 9 关闭（多为依赖升级）",
       "quality": null,
       "relevance": null,
       "score": 4.41,
@@ -2055,7 +2055,7 @@
       "effect": "",
       "notes": "链接核实：200",
       "tags": [],
-      "content_hash": "e298c20ce29078c31ae7c7c14effc5d151f7f78b75940f19582e7830948f0856"
+      "content_hash": "b99c7988bcd5a10bdf5ca90b54908e34de4955647a6ffd8695b5d650cb8c577e"
     },
     {
       "id": "20261029-0200-01-18",
@@ -2064,8 +2064,8 @@
       "type": "面试/中文",
       "source": "Firecrawl search",
       "category": "ai-agent-engineering",
-      "date": "维护：—",
-      "summary": "",
+      "date": "2026-10-29",
+      "summary": "维护：—",
       "quality": null,
       "relevance": null,
       "score": null,
@@ -2076,7 +2076,7 @@
       "effect": "",
       "notes": "中文; 链接核实：200",
       "tags": [],
-      "content_hash": "7fc4abdc01187ccdf846c229bc5a55dbbf1e17bc41abdb5bf128ae663c84475b"
+      "content_hash": "c85d31dd73fc084b2830bf1193003893ccb23835fa976f483a319424ab5f88b2"
     }
   ]
 }
