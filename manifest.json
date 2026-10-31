@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-29T12:30:00+08:00",
+  "updatedAt": "2026-10-31T14:45:00+08:00",
   "rounds": [
     {
       "id": 1,
@@ -53,6 +53,14 @@
         "20261029-0200-01-12",
         "20261029-0200-01-17"
       ]
+    },
+    {
+      "id": "20261030-1944-01",
+      "date": "2026-10-30",
+      "topic": "开源贡献首轮候选池（评审：质量评估；执行：Searcher）",
+      "picked": [],
+      "kind": "oss-contrib",
+      "notes": "轮次级记录：入选 21 + 候补 2 共 23 条 issue 收录于 Notion「开源项目贡献管理」，不作为 manifest 条目；源 rounds/oss-20261030-1944-01.md 与 oss-contrib/registry.json；eval sha256 97f31634…"
     }
   ],
   "items": [
